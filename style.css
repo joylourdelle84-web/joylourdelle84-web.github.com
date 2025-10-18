@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f7f7fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+.site-header {
+  background: linear-gradient(90deg, #6b6bff, #a09fff);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 0.9rem;
+}
