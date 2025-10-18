@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bienvenue sur mon site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Bienvenue sur mon site ✨</h1>
+    <p class="tagline">Créé par Joy — hébergé gratuitement sur GitHub Pages 💖</p>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2>À propos</h2>
+      <p>Salut ! Ici, je vais partager mes projets, mes passions et mes découvertes. 😊</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Tu peux me retrouver sur mes réseaux ou m’envoyer un message !</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> JoyLourdelle — Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
