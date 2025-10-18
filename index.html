@@ -2,34 +2,208 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bienvenue sur mon site</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mes e-books — JoyLourdelle</title>
+  <meta name="description" content="E-books professionnels écrits par Joy — conseils, modèles et guides pour réussir. Téléchargement immédiat." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <h1>Bienvenue sur mon site ✨</h1>
-    <p class="tagline">Créé par Joy — hébergé gratuitement sur GitHub Pages 💖</p>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">JL</div>
+        <div>
+          <h1 class="brand-title">JoyLourdelle E-books</h1>
+          <p class="brand-sub">Guides pratiques & modèles — télécharge instantanément</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#products">Produits</a>
+        <a href="#why">Pourquoi</a>
+        <a href="#testimonials">Avis</a>
+        <a href="#contact" class="btn-outline">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="content">
-    <section>
-      <h2>À propos</h2>
-      <p>Salut ! Ici, je vais partager mes projets, mes passions et mes découvertes. 😊</p>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h2 class="hero-title">Transforme tes idées en revenus — sans prise de tête</h2>
+          <p class="hero-sub">E-books clairs, structurés et prêts à vendre : marketing, organisation, design, et plus. Téléchargement immédiat après paiement.</p>
+          <div class="hero-cta">
+            <a href="#products" class="btn">Voir les e-books</a>
+            <a href="#contact" class="btn-outline">Me contacter</a>
+          </div>
+          <ul class="hero-features">
+            <li>Templates prêts à l'emploi</li>
+            <li>Formats PDF + EPUB</li>
+            <li>Soutien & mise à jour gratuite</li>
+          </ul>
+        </div>
+
+        <div class="hero-card">
+          <!-- Remplace cette image par ta bannière si tu veux -->
+          <div class="cover-placeholder">Couverture e-book</div>
+          <h3>Exemple : "Vendre ton premier e-book"</h3>
+          <p class="price">9,99€</p>
+          <a class="btn full" data-pay="https://example.com/payment-link" href="mailto:ton-email@example.com?subject=Achat%20e-book%20Vendre%20ton%20premier%20e-book">Acheter (via mail)</a>
+          <p class="tiny">Tu peux remplacer le lien d'achat par Ton lien Gumroad / PayPal / Stripe.</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Tu peux me retrouver sur mes réseaux ou m’envoyer un message !</p>
+    <!-- Products -->
+    <section id="products" class="section">
+      <div class="container">
+        <h2 class="section-title">Nos e-books populaires</h2>
+        <div class="grid">
+          <!-- Produit 1 -->
+          <article class="card">
+            <div class="thumb">Image</div>
+            <h3>Vendre ton premier e-book</h3>
+            <p class="muted">Guide pas-à-pas pour créer, publier et vendre ton premier e-book.</p>
+            <ul class="bullets">
+              <li>Format PDF & EPUB</li>
+              <li>Plan marketing inclus</li>
+              <li>Modèles de pages</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">9,99€</span>
+              <!-- Remplace mailto ou link de paiement ici -->
+              <a class="btn-small" href="mailto:ton-email@example.com?subject=Achat%20-%20Vendre%20ton%20premier%20e-book">Acheter</a>
+            </div>
+          </article>
+
+          <!-- Produit 2 -->
+          <article class="card">
+            <div class="thumb">Image</div>
+            <h3>Boîte à outils pour créateurs</h3>
+            <p class="muted">Templates, checklists et scripts pour gagner du temps.</p>
+            <ul class="bullets">
+              <li>Templates d'email</li>
+              <li>Checklist de lancement</li>
+              <li>Exemples concrets</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">14,99€</span>
+              <a class="btn-small" href="mailto:ton-email@example.com?subject=Achat%20-%20Boîte%20à%20outils%20pour%20créateurs">Acheter</a>
+            </div>
+          </article>
+
+          <!-- Produit 3 -->
+          <article class="card">
+            <div class="thumb">Image</div>
+            <h3>Design & couverture pro</h3>
+            <p class="muted">Guide pour créer des couvertures qui vendent (avec modèles Canva).</p>
+            <ul class="bullets">
+              <li>Tutoriels pas-à-pas</li>
+              <li>Modèles prêts</li>
+              <li>Conseils SEO</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">7,99€</span>
+              <a class="btn-small" href="mailto:ton-email@example.com?subject=Achat%20-%20Design%20&%20couverture%20pro">Acheter</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why -->
+    <section id="why" class="section pale">
+      <div class="container">
+        <h2 class="section-title">Pourquoi acheter chez Joy ?</h2>
+        <div class="grid-3">
+          <div class="feature">
+            <h4>Qualité professionnelle</h4>
+            <p>Contenu structuré, lisible et immédiatement applicable.</p>
+          </div>
+          <div class="feature">
+            <h4>Livraison instantanée</h4>
+            <p>Téléchargement automatique après paiement ou instructions par mail.</p>
+          </div>
+          <div class="feature">
+            <h4>Satisfaction garantie</h4>
+            <p>Remboursement ou assistance si tu n'es pas satisfaite.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2 class="section-title">Ils ont aimé</h2>
+        <div class="testimonials">
+          <blockquote>
+            « Grâce à l’e-book, j’ai vendu mon premier produit en 2 semaines. Très clair ! »<br><cite>— Amélie</cite>
+          </blockquote>
+          <blockquote>
+            « Les templates m'ont fait gagner des heures. »<br><cite>— Lucas</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section pale">
+      <div class="container">
+        <h2 class="section-title">Questions fréquentes</h2>
+        <details>
+          <summary>Comment puis-je payer ?</summary>
+          <p>Tu peux payer via PayPal, Gumroad, ou me contacter par mail pour un paiement personnalisé. Mentionne le titre du produit.</p>
+        </details>
+        <details>
+          <summary>Quels formats reçois-je ?</summary>
+          <p>PDF et EPUB. Certains packs incluent aussi des fichiers source (ex. .docx).</p>
+        </details>
+        <details>
+          <summary>Puis-je obtenir un remboursement ?</summary>
+          <p>Oui — contacte-moi dans les 14 jours si tu n'es pas satisfaite et je proposerai un remboursement ou une aide.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="section cta">
+      <div class="container">
+        <h2 class="section-title">Prête à acheter ou besoin d'aide ?</h2>
+        <p class="lead">Envoie-moi un message et je t’envoie le lien de paiement et le fichier immédiatement.</p>
+        <div class="contact-row">
+          <a class="btn" href="mailto:ton-email@example.com?subject=Je%20veux%20acheter%20un%20e-book">Envoyer un mail</a>
+          <a class="btn-outline" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> JoyLourdelle — Tous droits réservés.</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> JoyLourdelle — Tous droits réservés.</p>
+      <p class="muted">Site créé avec GitHub Pages • E-books numériques</p>
+    </div>
   </footer>
 
   <script>
+    // année automatique
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // exemple : si tu veux remplacer les boutons "Acheter" par un paiement direct,
+    // remplace les href="mailto:..." par ton lien Gumroad / PayPal
+    // ou utilise data-pay pour gérer un modal : (exemple simple)
+    document.querySelectorAll('[data-pay]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        // si data-pay contient un vrai lien, on redirige ; sinon suit le href
+        const link = e.currentTarget.getAttribute('data-pay');
+        if (link && link !== 'https://example.com/payment-link') {
+          e.preventDefault();
+          window.location.href = link;
+        }
+      });
+    });
   </script>
 </body>
 </html>
